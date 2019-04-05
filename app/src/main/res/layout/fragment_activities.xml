@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Members.activities.Activities">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="4dp"
+            android:gravity="center"
+            android:id="@+id/actHeader"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="செயல்பாடுகள்"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <android.support.v7.widget.CardView
+                app:cardElevation="0dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:weightSum="8"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+                             android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <TextView
+
+                                android:textSize="18dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:gravity="start|center"
+
+
+                                android:id="@+id/actHeading"
+                                android:background="@null"
+                                android:inputType="textMultiLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="18dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:id="@+id/actName"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <TextView
+
+                                android:textSize="18dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:gravity="start|center"
+                                android:id="@+id/actDate"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+                                android:id="@+id/actDistrict"
+                                android:textSize="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                          android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="18dp"
+                                android:id="@+id/actUnuin"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                      android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="18dp"
+                                android:id="@+id/actBranch"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="18dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+
+                                android:id="@+id/actDivision"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="18dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:hint="தலைப்பு"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+                                android:textSize="18dp"
+                                android:id="@+id/actDescription"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+
+                                android:background="@null"
+                                android:inputType="textMultiLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17dp"
+                            android:text="@string/image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <android.support.v7.widget.CardView
+
+                                app:cardCornerRadius="3dp"
+                                android:id="@+id/addPhotos"
+                                app:cardBackgroundColor="@color/background"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp">
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:layout_margin="3dp"
+                                    android:scaleType="fitXY"
+                                    android:id="@+id/actPhotos"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+                                <LinearLayout
+                                    android:id="@+id/goneViewPhotos"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:tint="@color/colorPrimary"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_camera_alt_black_24dp"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp" />
+                                    <TextView
+                                        android:id="@+id/ImageText"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="12dp"
+                                        android:text="@string/image"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.CardView
+
+
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/comVideoss"
+                                app:cardCornerRadius="3dp"
+                                app:cardBackgroundColor="@color/background"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp">
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:layout_margin="3dp"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/comMyVideos"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                                <LinearLayout
+                                    android:id="@+id/goneLayouts"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+
+                                        android:tint="@color/colorPrimary"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_voice_chat_black_24dp"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp" />
+                                    <TextView
+                                        android:id="@+id/VideoText"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="12dp"
+                                        android:text="காணொளி"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/actSubmit"
+                            app:cardCornerRadius="4dp"
+                            app:cardBackgroundColor="@color/red_normal"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:id="@+id/actSubmitTExt"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="18dp"
+                                android:textColor="@color/white"
+                                android:text="@string/submit"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>

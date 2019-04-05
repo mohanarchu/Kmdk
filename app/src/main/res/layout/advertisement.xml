@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="LDL"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/adHea"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="kakls"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:id="@+id/adTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <LinearLayout
+            android:padding="4dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <LinearLayout
+
+                android:layout_marginLeft="3dp"
+                android:orientation="vertical"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="addd"
+                    android:id="@+id/adds"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey"
+                    />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:text="addd"
+                    android:id="@+id/addMessages"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/placeholder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:text="addd"
+                        android:id="@+id/addsPlace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_weight="0.5"
+                android:padding="4dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="2sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/adImages"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+         <View
+             android:background="@color/colorPrimaryDark"
+             android:layout_width="match_parent"
+             android:layout_height="3dp"
+             />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

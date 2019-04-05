@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_icon_silhouette"
+        android:title="@string/homepages"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_category"
+        android:enabled="true"
+        android:visible="false"
+        android:icon="@drawable/ic_customer"
+        android:title="@string/members"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_setting"
+        android:icon="@drawable/ic_event"
+        android:title="@string/complaints"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_me"
+        android:enabled="true"
+        android:icon="@drawable/ic_political_candidate_speech"
+        android:title="செயல்பாடுகள்"
+        app:showAsAction="ifRoom"/>
+</menu>

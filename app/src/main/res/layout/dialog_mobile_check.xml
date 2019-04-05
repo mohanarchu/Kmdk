@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <com.video.aashi.kmdk.view.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="?colorPrimary"
+        android:padding="10dp"
+        android:id="@+id/correctNumber"
+        android:text="@string/dialog_title_mobile"
+        android:textColor="@color/text_yellow"
+        android:textSize="16sp" />
+
+    <com.video.aashi.kmdk.view.CTextView
+        android:id="@+id/txtNumber"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/_91"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:id="@+id/btnOk"
+        style="@style/AppTheme.GreenButtonStyle"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <com.video.aashi.kmdk.view.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:id="@+id/yes"
+            android:textColor="@color/text_yellow"
+            android:textSize="18dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:srcCompat="@drawable/ic_arrow_forward_green_900_24dp"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+</LinearLayout>

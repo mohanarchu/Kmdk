@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/downloadContainer"
+    android:layout_height="match_parent"
+    tools:context=".downloads.Downloads">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+
+                android:background="@color/background"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:tint="@color/text_red"
+                    android:src="@drawable/pdf"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/votersRegister"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center|left"
+                    android:text="உறுப்பினர் படிவம்"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:tint="@color/colorPrimaryDark"
+                    android:src="@drawable/ic_arrow_forward_black_24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+
+                android:background="@color/background"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/pdf"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:tint="@color/text_red"
+                    android:src="@drawable/pdf"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center|left"
+                    android:text="வாக்காளர் பட்டியல்"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:tint="@color/colorPrimaryDark"
+                    android:src="@drawable/ic_arrow_forward_black_24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp" />
+
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <RelativeLayout
+
+                android:background="@color/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:tint="@color/text_red"
+                    android:src="@drawable/pdf"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center|left"
+                    android:text="உறுப்பினர்கள் பட்டியல்"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+
+                    android:layout_gravity="center"
+                    android:tint="@color/colorPrimaryDark"
+                    android:src="@drawable/ic_arrow_forward_black_24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp" />
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+</FrameLayout>

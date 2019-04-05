@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string-array name="ld_activityScreenTitles">
+
+        <item>@string/homepage</item>
+        <item>@string/events</item>
+        <item>@string/new_member</item>
+        <item>@string/gallery</item>
+        <item>@string/complaint</item>
+        <item>@string/addressed</item>
+        <item>@string/member_login </item>
+        <item>@string/downloads</item>
+        <item>Homework</item>
+        <item>Invoice</item>
+        <item>Performance</item>
+        <item>Profile</item>
+        <item>Settings</item>
+        <item>Exit</item>
+    </string-array>
+</resources>

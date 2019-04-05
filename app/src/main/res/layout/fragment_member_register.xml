@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".memberJoin.MemberRegister">
+
+<android.support.v4.widget.NestedScrollView
+
+    android:layout_gravity="fill_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/memHead"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="4dp"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:text="@string/member_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <android.support.v7.widget.CardView
+        app:cardElevation="0dp"
+        app:cardCornerRadius="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <EditText
+
+                        android:textSize="20dp"
+                        android:id="@+id/memName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp">
+
+                </View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <EditText
+
+                        android:textSize="20dp"
+                        android:id="@+id/memEducation"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp">
+
+                </View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <EditText
+
+                        android:textSize="20dp"
+                        android:id="@+id/memAddress"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp">
+
+                </View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <EditText
+
+                        android:textSize="20dp"
+                        android:id="@+id/memPlace"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp">
+
+                </View>
+            </LinearLayout>
+            <LinearLayout
+              android:weightSum="1"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="0.85"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp">
+                    <EditText
+
+                        android:textSize="20dp"
+                        android:id="@+id/memPhone"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:inputType="number"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/errorImagae"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.15"
+                    android:src="@drawable/ic_checked"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp">
+
+            </View>
+            <LinearLayout
+                android:padding="7dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/checkState"
+                    android:buttonTint="@color/red_pressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:id="@+id/chackText"
+                    android:textColor="@color/text_red"
+                    android:text="பேரவை  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/casteType"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <EditText
+
+                        android:textSize="20dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/subCaste"
+
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp">
+
+                </View>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                                              <TextView
+
+                            android:gravity="center|start"
+                                                  android:layout_marginStart="5dp"
+                            android:layout_weight="0.85"
+                            android:hint="Select State"
+                            android:textSize="20sp"
+                            android:id="@+id/regState"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:textColor="@color/colorPrimary"
+
+                            />
+                        <Spinner
+
+
+                            android:id="@+id/spinner1"
+                            android:visibility="gone"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:popupBackground="#FFFF99"/>
+                        <TextView
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:text="1"
+                            android:layout_weight="0.15"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp">
+
+                    </View>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:gravity="center|start"
+
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="0.85"
+                            android:hint="Select State"
+                            android:textSize="20sp"
+                            android:id="@+id/regDistrict"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:textColor="@color/colorPrimary"
+
+                            />
+                        <TextView
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:text="1"
+                            android:layout_weight="0.15"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp">
+
+                    </View>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            android:gravity="center|start"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="0.85"
+                            android:hint="Select State"
+                            android:textSize="20sp"
+                            android:id="@+id/regZone"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:textColor="@color/colorPrimary"
+
+                            />
+                        <TextView
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:text="1"
+                            android:layout_weight="0.15"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp">
+
+                    </View>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            android:gravity="center|start"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="0.85"
+                            android:hint="Select State"
+                            android:textSize="20sp"
+                            android:id="@+id/regBranch"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:textColor="@color/colorPrimary"
+
+                            />
+                        <TextView
+                            android:background="@color/background"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:text="1"
+                            android:layout_weight="0.15"
+                            android:layout_width="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp">
+
+                    </View>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+
+                    android:layout_width="wrap_content"
+                    android:id="@+id/jobs"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/jobText"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17dp"
+                    android:text="Are you intrested in job?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.CardView
+
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/submitMember"
+                app:cardBackgroundColor="@color/red_normal"
+                android:layout_width="180dp"
+                android:layout_height="40dp">
+                <TextView
+
+                    android:textColor="@color/white"
+                    android:id="@+id/submitMemText"
+                    android:text="@string/submit"
+                    android:gravity="center"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

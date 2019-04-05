@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textSize="26dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/member_form"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.CardView
+                app:cardElevation="0dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:hint="@string/name"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:hint="@string/father_name"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:hint="@string/dob"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:hint="@string/voter_id"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:hint="@string/address"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:hint="@string/place"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:hint="@string/edt_hint"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:hint="@string/edu_qualification"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:hint="@string/occupation"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <EditText
+
+                                android:textSize="20dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:hint="@string/blood_group"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp">
+
+                        </View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"
+                            android:text="@string/member_photo"
+                            android:textSize="17dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <android.support.v7.widget.CardView
+
+                            app:cardCornerRadius="3dp"
+                            android:layout_marginLeft="4dp"
+                            app:cardBackgroundColor="@color/background"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
+                            <ImageView
+
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_camera"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </android.support.v7.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <LinearLayout
+
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp">
+                    <TextView
+
+                        android:textColor="@color/white"
+                        android:text="@string/preview"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="@color/red_normal"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp">
+                    <TextView
+
+                        android:textColor="@color/white"
+                        android:text="@string/save_member"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>
