@@ -168,12 +168,12 @@ public class Complaints extends Fragment implements ComplaiPresenter,StatePresen
     LinearLayout complaintGone;
     @BindView(R.id.goneLayout)
     LinearLayout goneLayout;
-  @BindView(R.id.VoiveRecord)
-  CardView voiceRecord;
+    @BindView(R.id.VoiveRecord)
+    CardView voiceRecord;
     @BindView(R.id.comVideos)
-     CardView comVideos;
+    CardView comVideos;
     @BindView(R.id.comSubmits)
-     CardView comSubmit;
+    CardView comSubmit;
     View view;
     Bitmap photo;
     File file;
@@ -397,11 +397,10 @@ public class Complaints extends Fragment implements ComplaiPresenter,StatePresen
                           bodyss  = MultipartBody.Part.createFormData("ComplaintAudio", "", requestFiless);
                       }
 
-                     String id  = "";
+                      String id  = "";
                       if(!userSession.getId().isEmpty())
                       {
                           id = userSession.getId();
-
                       }
                       Log.i("Complaint","UserId"+id);
                       RequestBody  ids = RequestBody.create(MediaType.parse("multipart/form-data"),  id );
