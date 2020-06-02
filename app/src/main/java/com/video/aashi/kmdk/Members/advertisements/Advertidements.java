@@ -210,7 +210,8 @@ public class Advertidements extends Fragment implements  AdvertidePresenter{
                                 RequestBody.create(MediaType.parse("multipart/form-data"), file);
 
                         body  =
-                                MultipartBody.Part.createFormData("AdvertisementImage", file.getName(), requestFile);
+                                MultipartBody.Part.createFormData("AdvertisementImage",
+                                        file.getName(), requestFile);
                     }
                     RequestBody adtype =
                             RequestBody.create(MediaType.parse("multipart/form-data"), typeId );
@@ -230,8 +231,7 @@ public class Advertidements extends Fragment implements  AdvertidePresenter{
                             RequestBody.create(MediaType.parse("multipart/form-data"), adddescribe.getText().toString());
                     advertise.postAdd(body,adtype,advertises,addplace,lat,lan,userid,message,branch);
 
-                    Log.i("Tag","Files"+ typeId + addPlace.getText().toString()+addReason.getText().toString()+langitude+lattiduew
-                            +userSession.getId()+adddescribe.getText().toString() );
+
                 }
 
             }
@@ -242,7 +242,6 @@ public class Advertidements extends Fragment implements  AdvertidePresenter{
     void showFile(Bitmap bitmap)
     {
         myfiles = bitmap;
-
     }
 
     public  class ImageCompressionAsyncTasks extends AsyncTask<String, Void, byte[]> {
@@ -301,7 +300,8 @@ public abstract static class ImageCompressionAsyncTask extends AsyncTask<String,
         Cursor cursor = null;
         try {
             String[] proj = { MediaStore.Images.Media.DATA };
-            cursor = context.getContentResolver().query(contentUri, proj, null, null, null);
+            cursor = context.getContentResolver().query(contentUri, proj, null,
+                    null, null);
             int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
             cursor.moveToFirst();
             return cursor.getString(column_index);
@@ -577,7 +577,8 @@ public abstract static class ImageCompressionAsyncTask extends AsyncTask<String,
                         && null != data) {
                     Uri selectedImage = data.getData();
                     String[] filePathColumn = { MediaStore.Images.Media.DATA };
-                    Cursor cursor = getActivity(). getContentResolver().query(selectedImage,filePathColumn, null, null, null);
+                    Cursor cursor = getActivity(). getContentResolver().query(selectedImage,filePathColumn,
+                            null, null, null);
                     cursor.moveToFirst();
                     int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
                     String picturePath = cursor.getString(columnIndex);

@@ -89,8 +89,7 @@ public class Complaint implements ComplaintView{
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
         );
-
-         editPop.setFocusable(true);
+        editPop.setFocusable(true);
         editPop.setAnimationStyle(R.style.popupanimation);
         editPop.showAtLocation(mView, Gravity.BOTTOM|Gravity.END, 0, 0);
         LinearLayout b_camera = (LinearLayout)mView.findViewById(R.id.btnCamera);
@@ -102,7 +101,7 @@ public class Complaint implements ComplaintView{
         if (menuStrings.getSharedPreferences())
         {
             fromCm.setText("Camera");
-            fromGal .setText("Gallery");
+            fromGal.setText("Gallery");
             head.setText("Choose..!");
         }
         b_camera.setOnClickListener(new View.OnClickListener() {
@@ -226,7 +225,8 @@ public class Complaint implements ComplaintView{
                 complaiPresenter.progressMessage("காத்திருக்கவும்..!");
             }
 
-            getObservable(id,fullName,image,video,audio,mobile,type,complaint,message,place,places).subscribeWith(getCoomplaint());
+            getObservable(id,fullName,image,video,audio,mobile,type,complaint,
+                    message,place,places).subscribeWith(getCoomplaint());
         }
 
     }

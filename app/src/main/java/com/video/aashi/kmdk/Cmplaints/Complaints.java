@@ -245,7 +245,8 @@ public class Complaints extends Fragment implements ComplaiPresenter,StatePresen
                   {
                       PopupWindow   viewImage = new PopupWindow(getActivity());
                       ImageView imageView;
-                      LayoutInflater layoutInflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                      LayoutInflater layoutInflater = (LayoutInflater) getActivity().
+                              getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                       View layout = layoutInflater.inflate(R.layout.test, null);
                       imageView =(ImageView)layout.findViewById(R.id.loadimage);
                       viewImage.setContentView(layout);
@@ -304,7 +305,6 @@ public class Complaints extends Fragment implements ComplaiPresenter,StatePresen
               @Override
               public void onClick(View v) {
                   complaintView.getVideo();
-
               }
           });
 
@@ -402,7 +402,7 @@ public class Complaints extends Fragment implements ComplaiPresenter,StatePresen
                       {
                           id = userSession.getId();
                       }
-                      Log.i("Complaint","UserId"+id);
+
                       RequestBody  ids = RequestBody.create(MediaType.parse("multipart/form-data"),  id );
                       RequestBody fullName = RequestBody.create(MediaType.parse("multipart/form-data"), comName.getText().toString() );
                       RequestBody mobiles =RequestBody.create(MediaType.parse("multipart/form-data"), mobile.getText().toString());
@@ -411,7 +411,8 @@ public class Complaints extends Fragment implements ComplaiPresenter,StatePresen
                       RequestBody message = RequestBody.create(MediaType.parse("multipart/form-data"), describe.getText().toString());
                       RequestBody  places = RequestBody.create(MediaType.parse("multipart/form-data"), place.getText().toString());
                       RequestBody  branch = RequestBody.create(MediaType.parse("multipart/form-data"), branchid);
-                      complaintView.uploadComplaint(ids,fullName,body,bodys,bodyss,mobiles,ftype,complaint,message,places,branch);
+                      complaintView.uploadComplaint(ids,fullName,body,bodys,bodyss,mobiles,
+                              ftype,complaint,message,places,branch);
                   }
               }
           });
@@ -619,9 +620,7 @@ public class Complaints extends Fragment implements ComplaiPresenter,StatePresen
                 Intent intent =
                         new Intent();
                 intent.setAction(Intent.ACTION_GET_CONTENT);
-
                 intent.setType("video/*");
-
                 startActivityForResult(Intent.createChooser(intent,"Select Video"), 1100);
             }
 
@@ -647,7 +646,8 @@ public class Complaints extends Fragment implements ComplaiPresenter,StatePresen
         Bitmap bitmaps = null;
         try {
 //                bitmap = MediaStore.Images.Media.getBitmap(context.getContentResolver(), uri);
-            bitmaps   = ThumbnailUtils.createVideoThumbnail(video.getPath(), MediaStore.Video.Thumbnails.MINI_KIND);
+            bitmaps   = ThumbnailUtils.createVideoThumbnail(video.getPath(),
+                    MediaStore.Video.Thumbnails.MINI_KIND);
         } catch (Exception e)
         {
             e.printStackTrace();
@@ -1017,9 +1017,8 @@ public class Complaints extends Fragment implements ComplaiPresenter,StatePresen
                 {
                      Uri videoFileUri;
                      videoFileUri = data.getData();
-
                      video = new File(getRealPathFromUri(getActivity(),videoFileUri));
-                    complaintView.dismissvideoPop();
+                     complaintView.dismissvideoPop();
                      getVideo(videoFileUri);
                 }
                 else if (requestCode == 1100 && resultCode == Activity.RESULT_OK)

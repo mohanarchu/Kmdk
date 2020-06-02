@@ -197,8 +197,6 @@ public class AddComplaints extends Fragment implements View.OnClickListener,Comp
                     ShowVideo showVideo = new ShowVideo(context, APIUrl.Api+"Uploads/Complaint/Video/"+
                             complaiArray.getVideo(),view);
                     showVideo.initiatelayout(true);
-
-
                 }
             });
 
@@ -208,8 +206,7 @@ public class AddComplaints extends Fragment implements View.OnClickListener,Comp
                 viewHolder.imageView.setVisibility(View.VISIBLE);
                 viewHolder.image.setVisibility(View.VISIBLE);
                 Glide.with(context).load(APIUrl.Api+"Uploads/Complaint/Image/"+
-                        complaiArray.getImage()).into(viewHolder.image);
-            }
+                        complaiArray.getImage()).into(viewHolder.image); }
             else
             {
                 viewHolder.imageView.setVisibility(View.GONE);

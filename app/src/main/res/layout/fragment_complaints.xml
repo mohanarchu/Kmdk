@@ -442,7 +442,7 @@
                             android:layout_marginLeft="10dp"
                             android:id="@+id/VoiveRecord"
                             app:cardCornerRadius="3dp"
-                            android:visibility="gone"
+
                             app:cardBackgroundColor="@color/background"
                             android:layout_width="100dp"
                             android:layout_height="100dp">
